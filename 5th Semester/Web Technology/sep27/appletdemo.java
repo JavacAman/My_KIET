@@ -13,8 +13,12 @@ public void start()
  }
 public void paint(Graphics g)
  {
-   g.drawString("Hello India",100,200);
-   g.drawRect(
+   g.drawOval(100,80,150,200);
+   g.drawOval(125,155,20,10);
+   g.drawOval(195,155,20,10);
+   g.drawLine(170,155,170,180);
+   g.drawArc(130,180,80,40,180,180);
+   
  }
  public void stop()
  {
@@ -30,9 +34,7 @@ public static void main(String args[])
 appletdemo A = new appletdemo();
 A.init();
 A.start();
-
 A.stop();
 A.destroy();
 }
 }
-
